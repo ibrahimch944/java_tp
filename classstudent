@@ -1,0 +1,29 @@
+package tp1;
+
+public class exclassstudent {
+	 // Attributs
+    private String nom;
+    private String prenom;
+    private int matricule;
+    private double note;
+
+    // Constructeur
+    public exclassstudent(String nouveauNom, String nouveauPrenom,int nouveauMatricule , double nouvelleNote) {
+        nom = nouveauNom;
+        prenom = nouveauPrenom;
+        matricule = nouveauMatricule;
+        note = nouvelleNote;
+    }
+    // Méthodes
+
+    // Modifier la note de l'étudiant
+    public void modifierNote(double nouvelleNote) {
+        note = nouvelleNote;
+    }
+
+    // Une méthode qui retourne l'état de l'étudiant
+    public String toString() {
+        return "Nom: " + nom + ", Prénom: " + prenom + ",Matricule: " + matricule + ", Note: " + note;
+    }
+
+}
