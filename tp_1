@@ -1,0 +1,29 @@
+package tp1;
+
+import java.util.Scanner;
+
+public class classtp1 {
+
+	public static void main(String[] args) {
+		scanner scanner = new Scanner(System.in);
+
+        System.out.println("Veuillez entrer une valeur pour x:");
+        int x = scanner.nextInt();
+
+        int motsecret = 10 ;
+
+        // Compare
+        if (x < motsecret) {
+            System.out.println("le numero que vous avez saisi est inferieur au num secret");
+        } else if (x > motsecret) {
+            System.out.println("Le numero que vous avez saisi est superieur au num secret ");
+        } else {
+            System.out.println("Bravvoo");
+        }
+
+        scanner.close();
+		
+	}
+
+}
+
