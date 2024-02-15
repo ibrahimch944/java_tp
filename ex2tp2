@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+
+public class Bibliotheque {
+    ArrayList<Livre> livres;
+    public Bibliotheque() {
+        livres = new ArrayList<>();
+    }
+    public void ajouterLivre(Livre livre) {
+        livres.add(livre);
+    }
+    public void afficherLivres() {
+        for (Livre livre : livres) {
+            System.out.println(livre);
+        }
+    }
+public class Main {
+    public static void main(String[] args) {
+        Bibliotheque bibliotheque = new Bibliotheque();
+        bibliotheque.ajouterLivre(new Livre("Antigone", "Simo", 1950));
+        bibliotheque.ajouterLivre(new Livre("Sansfamille", "ibrahim", 2000));
+
+        System.out.println("Livres présents dans la bibliothèque :");
+        maBibliotheque.afficherLivres();
+    }
+}
